@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Enter Your Text</title>
+    <style>
+        #input {
+            border: solid;
+            padding: 10px;
+        }
+
+        body {
+            width: 400px;
+            height: 100px;
+            display: grid;
+            position: relative;
+            background-image: url(https://png.pngtree.com/thumb_back/fh260/background/20200714/pngtree-modern-double-color-futuristic-neon-background-image_351866.jpg);
+            text-align: center;
+            align-content: center;
+            justify-content: center;
+            padding: 20% 10% 5% 35%;
+            grid-template-columns: auto;
+        }
+
+        div {
+            width: 700px;
+            height: 400px;
+            background-color: tomato;
+            color: rgb(146, 155, 191);
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+        }
+             button {
+            background-color: rgb(0, 0, 0);
+            color: white;
+            box-shadow: yellow;
+            font-size: 20px;
+            float: bottom;
+        }
+
+        button:hover {
+            background-color: rgb(226, 19, 57);
+            color: rgb(126, 182, 255);
+            transition: 0.5s;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <input id="input">
+        <br>
+        <button onclick="btnclicked()">click</button>
+    </div>
+
+    <script>
+        function btnclicked() {
+            var input = prompt("DOB", "ENTER YOUR BIRTH");
+            var value1 = document.getElementById('input');
+            value1.value = input;
+        }
+    </script>
+</body>
+
+</html>
